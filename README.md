@@ -16,9 +16,19 @@
 
 
 
+Windows以外では動作しません。
+
+
+
 ## 使い方
 
-以下のように使用します。
+以下のリンクよりzipをダウンロードし任意のフォルダに解答します。
+
+https://github.com/Taka414/CombineFiles/releases/download/1.0.0/CombineFiles.zip
+
+
+
+内容物の「CombineFiles」をコマンドラインから指定し以下のように引数を指定し実行してください。
 
 ```
 CombineFiles 1 c:\workspace\mycode .cpp;.h;.hpp ignoreDirName1;ignoreDirName2
