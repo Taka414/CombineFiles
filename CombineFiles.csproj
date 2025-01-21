@@ -1,10 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
-  </PropertyGroup>
-
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <StartupObject>CombineFiles.AppMain</StartupObject>
+        <Platforms>x64</Platforms>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <!-- Release ビルド時に有効化 -->
+        <EmbedUntrackedSources>false</EmbedUntrackedSources>
+        <SourceLinkCreate>false</SourceLinkCreate>
+        <DebugType>none</DebugType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' != 'Release'">
+        <!-- Debug ビルド時やその他のビルド構成では無効化 -->
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <SourceLinkCreate>true</SourceLinkCreate>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
 </Project>

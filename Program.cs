@@ -19,11 +19,11 @@ namespace CombineFiles
     // (1)
     // 対象フォルダにどんな拡張子が含まれているのか調べる例
     // 出力をクリップボードにコピーする例
-    // xxx.exe 0 c:\xxx\xxx | clip
+    // CombineFiles.exe 0 c:\xxx\xxx | clip
     //
     // (2)
     // 指定したフォルダ内のファイルを1つにまとめる
-    // xxx.exe 1 c:\workspace\sample .cpp;.h;.hpp ignoreDirName1;ignoreDirName2
+    // CombineFiles.exe 1 c:\workspace\sample .cpp;.h;.hpp ignoreDirName1;ignoreDirName2
     // 
 
     internal class AppMain
@@ -127,11 +127,11 @@ namespace CombineFiles
             Console.WriteLine("(1)");
             Console.WriteLine("対象フォルダにどんな拡張子が含まれているのか調べる例");
             Console.WriteLine("出力クリップボードにコピーする例");
-            Console.WriteLine("xxx.exe 0 c:\\xxx\\xxx | clip");
+            Console.WriteLine("CombineFiles.exe 0 c:\\xxx\\xxx | clip");
             Console.WriteLine("");
             Console.WriteLine("(2)");
             Console.WriteLine("指定したフォルダ内のファイルを1つにまとめる");
-            Console.WriteLine("xxx.exe 1 c:\\workspace\\sample .cpp;.h;.hpp OSS;web_client");
+            Console.WriteLine("CombineFiles.exe 1 c:\\workspace\\sample .cpp;.h;.hpp OSS;web_client");
         }
 
         /// <summary>
