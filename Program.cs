@@ -111,6 +111,7 @@ namespace CombineFiles
 
         static void DumpHelp()
         {
+            Console.WriteLine("--------------------");
             Console.WriteLine("説明:");
             Console.WriteLine("コードを一つのファイルにまとめる");
             Console.WriteLine("Geminiが200万文字まで認識してくれることを期待して特定のフォルダ内にある全てのソースコードを1つのファイルにまとめるツール");
@@ -132,6 +133,7 @@ namespace CombineFiles
             Console.WriteLine("(2)");
             Console.WriteLine("指定したフォルダ内のファイルを1つにまとめる");
             Console.WriteLine("CombineFiles.exe 1 c:\\workspace\\sample .cpp;.h;.hpp OSS;web_client");
+            Console.WriteLine("--------------------");
         }
 
         /// <summary>
